@@ -7,13 +7,13 @@ $email = $_POST['email'];
 $phone = $_POST['phone'];
 $usermessage = $_POST['message'];
 
-$message = "Nome = " . $name . "\r\n Celular =" . $phone . "\r\n Email = " . $email . "\r\n Assunto = " . $assunto . "\r\n Celular =" . $phone ."\r\n Mensagem =" . $usermessage;
+$message = "Nome = " . $name . "\r\n Celular =" . $phone . "\r\n Email = " . $email . "\r\n Assunto = " . $assunto . "\r\n Celular =" . $phone . "\r\n Mensagem =" . $usermessage;
 
 $subject = "Contato via site";
-$fromname = "Site";
+$fromname = "Contato do site";
 $fromemail = 'contato@feraspersonalizados.com.br';
-$mailto = 'italobartolomeugarcia@gmail.com'; 
-$mailto = 'italobartolomeugg@gmail.com'; 
+$mailto = 'feraspersonalizados@gmail.com';
+$mailto = 'italobartolomeugg@gmail.com';
 $content = file_get_contents($fileName);
 $content = chunk_split(base64_encode($content));
 
