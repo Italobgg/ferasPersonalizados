@@ -1,5 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900");
+@import url('https://fonts.googleapis.com/css2?family=Slackey&display=swap');
 
 html,
 body,
@@ -2950,6 +2951,8 @@ body.is-touch .tiles article .content {
 }
 
 #header .logo {
+	font-family: 'Slackey';
+	font-size: 2em;
 	display: block;
 	border-bottom: 0;
 	color: inherit;
@@ -2975,8 +2978,8 @@ body.is-touch .tiles article .content {
 
 #header .logo .symbol img {
 	display: block;
-	width: 20em;
-	height: 20em;
+	width: 15em;
+	height: 15em;
 }
 
 #header nav {
