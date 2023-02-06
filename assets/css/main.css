@@ -1977,6 +1977,7 @@ header p {
 	background-color: rgba(132, 161, 242, 0.1);
 }
 
+
 /* List */
 
 ol {
@@ -3495,4 +3496,29 @@ body.is-menu-visible #menu .close {
 		padding: 0 1.25em;
 	}
 
+}
+
+/* e-mail */
+
+.emailRecebido {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	color: rgb(133, 181, 236);
+}
+
+/* pagamento */
+
+.pagamento {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	color: rgb(133, 236, 133);
+}
+
+.emProcesso {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	color: rgb(236, 227, 133);
 }
