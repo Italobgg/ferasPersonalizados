@@ -13,7 +13,7 @@ $subject = "Contato via site";
 $fromname = "Contato do site";
 $fromemail = 'contato@feraspersonalizados.com.br';
 $mailto = 'feraspersonalizados@gmail.com';
-$mailto = 'italobartolomeugg@gmail.com';
+$mailto = 'italobgg00@gmail.com';
 $content = file_get_contents($fileName);
 $content = chunk_split(base64_encode($content));
 
@@ -40,7 +40,7 @@ $body .= $content . $eol;
 $body .= "--" . $separator . "--";
 //SEND Mail
 if (mail($mailto, $subject, $body, $headers)) {
-    header('Location: index.html'); // do what you want after sending the email
+    header('Location: pages/enviaEmail/recebido.html'); // Escolha para onde mandar depois de enviar o e-mail
 
 
 } else {
