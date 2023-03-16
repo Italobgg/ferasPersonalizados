@@ -63,11 +63,23 @@
 
 				<span>Disponivel nos tamanhos de 15 x 15 e 20 x 20 por <b>R$ 39,90</b></span>
 
-				<div class="inner">
+				<!-- 				<div class="inner">
 					<script src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
 					data-preference-id="30297308-c0d04b7a-aadb-40d1-a5e3-9fb7421bdd6c"
 					data-source="button"></script>
-				</div>
+				</div> -->
+
+				<form method="post" action="#">
+					<div class="col-6 col-12-small">
+						<select name="demo-category" id="demo-category">
+							<option value="">Quantidade</option>
+							<option value="1">1</option>
+							<option value="1">2</option>
+							<option value="1">3</option>
+							<option value="1">4</option>
+						</select>
+					</div>
+				</form>
 			</div>
 		</div>
 
@@ -76,7 +88,7 @@
 			<div class="inner">
 				<section>
 					<h2>Faça seu pedido</h2>
-					<form method="post" action="../../envia.php" enctype="multipart/form-data">
+					<form method="post" action="../../assets/php/envia.php" enctype="multipart/form-data">
 						<div class="fields">
 							<div class="field half">
 								<input type="text" name="name" id="name" placeholder="Nome" required="required" />
