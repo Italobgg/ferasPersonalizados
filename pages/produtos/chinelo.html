@@ -52,9 +52,19 @@
                 <center>
                     <h1>Chinelo personalizado</h1>
                 </center>
-                <span class="image main"><img src="../../assets/images/chinelo1.png" alt="" /></span>
-                <span class="image main"><img src="../../assets/images/chinelo2.png" alt="" /></span>
-                <span class="image main"><img src="../../assets/images/chinelo3.png" alt="" /></span>
+				<section>
+                    <div class="box alt">
+                        <div class="row gtr-uniform">
+                            <div class="col-4"><span class="image fit"><img src="../../assets/images/chinelo/chinelo3.jpg" alt="" /></span></div>
+                            <div class="col-4"><span class="image fit"><img src="../../assets/images/chinelo/chinelo1.jpg" alt="" /></span></div>
+                            <div class="col-4"><span class="image fit"><img src="../../assets/images/chinelo/chinelo2.jpg" alt="" /></span></div>
+                            <div class="col-4"><span class="image fit"><img src="../../assets/images/chinelo/chinelo4.jpg" alt="" /></span></div>
+                            <div class="col-4"><span class="image fit"><img src="../../assets/images/chinelo/chinelo5.jpg" alt="" /></span></div>
+                            <div class="col-4"><span class="image fit"><img src="../../assets/images/chinelo/chinelo6.jpg" alt="" /></span></div>
+                            <div class="col-4"><span class="image fit"><img src="../../assets/images/chinelo/chinelo7.jpg" alt="" /></span></div>
+                        </div>
+                    </div>
+                </section>
                 <p>Lindo chinelo personalizado do seu jeito<br>
                     Desenho estampado pelo processo de sublimação com alta qualidade e durabilidade.<br>
                     Composição: Borracha microporosa (borracha natural com EVA) e tecido poliéster. Material resistente
@@ -80,10 +90,34 @@
                 <p>Estamos inteiramente à disposição para qualquer dúvida!<br>
                     Desde já agradecemos a preferência e boas compras!</p>
                 <span><b>R$ 48,00</b></span>
+                <!-- comprar -->
                 <div class="inner">
-                    <script src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
-                        data-preference-id="30297308-96917aec-79b0-4f3a-9ed1-9de4ac1ee242"
-                        data-source="button"></script>
+                    <br>
+                    <form method="post" action="#">
+                        <div class="col-6 col-12-small">
+                            <select>
+                                <option>Selecione a quantidade que desenha comprar</option>
+                                <option value="https://mpago.la/2CQujhp">1 unidade </option>
+                                <option value="https://mpago.la/2AGRrnn">2 unidades </option>
+                                <option value="https://mpago.la/1KdGon1">3 unidades </option>
+                                <option value="https://mpago.la/2Vq6W4P">4 unidades </option>
+                                <option value="https://mpago.la/1pa37Tv">5 unidades </option>
+                                <option value="https://mpago.la/2rxZUX8">6 unidades </option>
+                                <option value="https://mpago.la/1JCEeoi">7 unidades </option>
+                                <option value="https://mpago.la/1xVAaNi">8 unidades </option>
+                                <option value="https://mpago.la/1xVJJAf">9 unidades </option>
+                                <option value="https://mpago.la/2NhvHT5">10 unidades </option>
+                                <option value="">Quantidade personalizada </option>
+                            </select>
+                        </div>
+                    </form>
+                    <script>
+                        let selectEl = document.getElementsByTagName('select');
+
+                        selectEl[0].addEventListener('change', function () {
+                            location.href = this.value;
+                        });
+                    </script>
                 </div>
             </div>
         </div>
@@ -93,7 +127,7 @@
             <div class="inner">
                 <section>
                     <h2>Faça seu pedido</h2>
-					<form method="post" action="../../assets/php/envia.php" enctype="multipart/form-data">
+                    <form method="post" action="../../assets/php/envia.php" enctype="multipart/form-data">
                         <div class="fields">
                             <div class="field half">
                                 <input type="text" name="name" id="name" placeholder="Nome" required="required" />

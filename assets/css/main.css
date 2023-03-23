@@ -3507,6 +3507,13 @@ body.is-menu-visible #menu .close {
 	color: rgb(133, 181, 236);
 }
 
+.façaPedido {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	color: rgb(40, 40, 40);
+}
+
 /* pagamento */
 
 .pagamento {

@@ -62,24 +62,35 @@
 					Desde já agradecemos a preferência e boas compras!</p>
 
 				<span>Disponivel nos tamanhos de 15 x 15 e 20 x 20 por <b>R$ 39,90</b></span>
-
-				<!-- 				<div class="inner">
-					<script src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
-					data-preference-id="30297308-c0d04b7a-aadb-40d1-a5e3-9fb7421bdd6c"
-					data-source="button"></script>
-				</div> -->
-
+			</div>
+		<!-- comprar -->
+			<div class="inner">
+				<br>
 				<form method="post" action="#">
 					<div class="col-6 col-12-small">
-						<select name="demo-category" id="demo-category">
-							<option value="">Quantidade</option>
-							<option value="1">1</option>
-							<option value="1">2</option>
-							<option value="1">3</option>
-							<option value="1">4</option>
+						<select>
+							<option>Selecione a quantidade que desenha comprar</option>
+							<option value="https://www.google.com">1 unidade </option>
+							<option value="https://www.google.com">2 unidades </option>
+							<option value="https://www.google.com">3 unidades </option>
+							<option value="https://www.google.com">4 unidades </option>
+							<option value="https://www.google.com">5 unidades </option>
+							<option value="https://www.google.com">6 unidades </option>
+							<option value="https://www.google.com">7 unidades </option>
+							<option value="https://www.google.com">8 unidades </option>
+							<option value="https://www.google.com">9 unidades </option>
+							<option value="https://www.google.com">10 unidades </option>
+							<option value="https://www.google.com">Quantidade personalizada </option>
 						</select>
 					</div>
 				</form>
+				<script>
+					let selectEl = document.getElementsByTagName('select');
+
+					selectEl[0].addEventListener('change', function () {
+						location.href = this.value;
+					});
+				</script>
 			</div>
 		</div>
 

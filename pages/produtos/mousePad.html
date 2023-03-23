@@ -52,10 +52,18 @@
                 <center>
                     <h1>Mouse pad personalizado</h1>
                 </center>
-                <span class="image fit"><img src="../../assets/images/mousePadTop.jpg" alt="" /></span>
-                <span class="image main"><img src="../../assets/images/mousePad1.png" alt="" /></span>
-                <span class="image main"><img src="../../assets/images/mousePad2.png" alt="" /></span>
-                <span class="image main"><img src="../../assets/images/mousePad3.png" alt="" /></span>
+				<section>
+                    <div class="box alt">
+                        <div class="row gtr-uniform">
+                            <div class="col-4"><span class="image fit"><img src="../../assets/images/mousePad/mousePad1.jpg" alt="" /></span></div>
+                            <div class="col-4"><span class="image fit"><img src="../../assets/images/mousePad/mousePad2.jpg" alt="" /></span></div>
+                            <div class="col-4"><span class="image fit"><img src="../../assets/images/mousePad/mousePad3.jpg" alt="" /></span></div>
+                            <div class="col-4"><span class="image fit"><img src="../../assets/images/mousePad/mousePad4.jpg" alt="" /></span></div>
+                            <div class="col-4"><span class="image fit"><img src="../../assets/images/mousePad/mousePad5.jpg" alt="" /></span></div>
+                            <div class="col-4"><span class="image fit"><img src="../../assets/images/mousePad/mousePad7.jpg" alt="" /></span></div>
+                        </div>
+                    </div>
+                </section>
                 <p> Adicione o seu toque pessoal ao seu setup com o nosso mouse pad personalizado.</p>
                 <p>O nosso mouse pad personalizado é feito de material de alta qualidade e é projetado para garantir
                     precisão e conforto enquanto você trabalha ou joga.<br>
@@ -66,10 +74,34 @@
                     Ele também é fácil de limpar e tem ótima durabilidade.
                 </p>
                 <span><b>R$ 12,00</b></span>
+                <!-- comprar -->
                 <div class="inner">
-                    <script src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
-                        data-preference-id="30297308-3bc494bd-f72a-4b50-bedf-7d254606a1b5"
-                        data-source="button"></script>
+                    <br>
+                    <form method="post" action="#">
+                        <div class="col-6 col-12-small">
+                            <select>
+                                <option>Selecione a quantidade que desenha comprar</option>
+                                <option value="https://mpago.la/14Xiw5o">1 unidade </option>
+                                <option value="https://mpago.la/28KyiTj">2 unidades </option>
+                                <option value="https://mpago.la/22DQjFs">3 unidades </option>
+                                <option value="https://mpago.la/1WqLQSA">4 unidades </option>
+                                <option value="https://mpago.la/1oegCnW">5 unidades </option>
+                                <option value="https://mpago.la/1EJ5k5X">6 unidades </option>
+                                <option value="https://mpago.la/1uTgANB">7 unidades </option>
+                                <option value="https://mpago.la/2DymoaC">8 unidades </option>
+                                <option value="https://mpago.la/1jLNsMT">9 unidades </option>
+                                <option value="https://mpago.la/1PAdrUN">10 unidades </option>
+                                <option value="">Quantidade personalizada </option>
+                            </select>
+                        </div>
+                    </form>
+                    <script>
+                        let selectEl = document.getElementsByTagName('select');
+
+                        selectEl[0].addEventListener('change', function () {
+                            location.href = this.value;
+                        });
+                    </script>
                 </div>
             </div>
         </div>
@@ -79,7 +111,7 @@
             <div class="inner">
                 <section>
                     <h2>Faça seu pedido</h2>
-					<form method="post" action="../../assets/php/envia.php" enctype="multipart/form-data">
+                    <form method="post" action="../../assets/php/envia.php" enctype="multipart/form-data">
                         <div class="fields">
                             <div class="field half">
                                 <input type="text" name="name" id="name" placeholder="Nome" required="required" />

@@ -49,12 +49,25 @@
         <!-- Main -->
         <div id="main">
             <div class="inner">
-                <center>
-                    <h1>Caneca de Porcelana Personalizada</h1>
-                </center>
-                <span class="image main"><img src="../../assets/images/canecaPascoa3.png" alt="" /></span>
-                <span class="image main"><img src="../../assets/images/canecaPascoa1.png" alt="" /></span>
-                <span class="image main"><img src="../../assets/images/canecaPascoa2.png" alt="" /></span>
+                <center> <h1>Caneca Porcelana Personalizada</h1></center>
+                <section>
+                    <div class="box alt">
+                        <div class="row gtr-uniform">
+                            <div class="col-4"><span class="image fit"><img src="../../assets/images/canecaPorcelana/caneca8.jpg"
+                                        alt="" /></span></div>
+                            <div class="col-4"><span class="image fit"><img src="../../assets/images/canecaPorcelana/caneca9.jpg"
+                                        alt="" /></span></div>
+                            <div class="col-4"><span class="image fit"><img src="../../assets/images/canecaPorcelana/caneca7.jpg"
+                                        alt="" /></span></div>
+                            <div class="col-4"><span class="image fit"><img src="../../assets/images/canecaPorcelana/caneca6.jpg"
+                                        alt="" /></span></div>
+                            <div class="col-4"><span class="image fit"><img src="../../assets/images/canecaPorcelana/caneca5.jpg"
+                                        alt="" /></span></div>
+                            <div class="col-4"><span class="image fit"><img src="../../assets/images/canecaPorcelana/caneca3.jpg"
+                                        alt="" /></span></div>
+                        </div>
+                    </div>
+                </section>
                 <p>Você imagina a gente Realiza.</p>
                 <p>Qualidade durabilidade e um toque personalizado de estilo são apenas algumas das características que
                     você vai encontrar nessa caneca.<br>
@@ -64,13 +77,36 @@
                     Pode ser levada ao micro-ondas e a lava louças.</p>
                 <p>Pedimos que mande sua Foto ou Arte assim que realizar a compra.</p>
                 <p>Estamos inteiramente à disposição para qualquer dúvida!<br>
-                    Desde já agradecemos a preferência e boas compras!</p>
-                <span><b>R$ 35,00</b></span>
+                    <span><b>R$ 35,00</b></span>
 
+                    <!-- comprar -->
                 <div class="inner">
-                    <script src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
-                        data-preference-id="30297308-334144a0-3306-4945-bdbe-9f5d63ba4f78"
-                        data-source="button"></script>
+                    <br>
+                    <form method="post" action="#">
+                        <div class="col-6 col-12-small">
+                            <select>
+                                <option>Selecione a quantidade que desenha comprar</option>
+                                <option value="https://mpago.la/29xwK2f">1 unidade </option>
+                                <option value="https://mpago.la/1NkZjCQ">2 unidades </option>
+                                <option value="https://mpago.la/2S6rRP3">3 unidades </option>
+                                <option value="https://mpago.la/1eunmCq">4 unidades </option>
+                                <option value="https://mpago.la/2SzLh7Y">5 unidades </option>
+                                <option value="https://mpago.la/2A7JZD7">6 unidades </option>
+                                <option value="https://mpago.la/16pWwin">7 unidades </option>
+                                <option value="https://mpago.la/2SD14tn">8 unidades </option>
+                                <option value="https://mpago.la/1We89hn">9 unidades </option>
+                                <option value="https://mpago.la/1gjJZuZ">10 unidades </option>
+                                <option value="#">Quantidade personalizada </option>
+                            </select>
+                        </div>
+                    </form>
+                    <script>
+                        let selectEl = document.getElementsByTagName('select');
+
+                        selectEl[0].addEventListener('change', function () {
+                            location.href = this.value;
+                        });
+                    </script>
                 </div>
             </div>
         </div>
@@ -80,7 +116,7 @@
             <div class="inner">
                 <section>
                     <h2>Faça seu pedido</h2>
-					<form method="post" action="../../assets/php/envia.php" enctype="multipart/form-data">
+                    <form method="post" action="../../assets/php/envia.php" enctype="multipart/form-data">
                         <div class="fields">
                             <div class="field half">
                                 <input type="text" name="name" id="name" placeholder="Nome" required="required" />
@@ -122,7 +158,8 @@
                                 class="icon brands style2 fa-whatsapp"><span class="label">Phone</span></a></li>
                         <li><a href="tel:+5516992747372" class="icon solid style2 fa-phone"><span
                                     class="label">Phone</span></a></li>
-                        <li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+                        <li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a>
+                        </li>
                     </ul>
                 </section>
                 <ul class="copyright">

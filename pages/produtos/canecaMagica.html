@@ -56,9 +56,18 @@
                     <source src="../../assets/videos/VidCanecaMagica.mov" type="video/mp4">
             </div>
             <div class="inner">
-                <span class="image main"><img src="../../assets/images/canecaMagica.png" alt="" /></span>
-                <span class="image main"><img src="../../assets/images/canecaMagica2.png" alt="" /></span>
-                <span class="image main"><img src="../../assets/images/canecaMagica3.png" alt="" /></span>
+                <section>
+                    <div class="box alt">
+                        <div class="row gtr-uniform">
+                            <div class="col-4"><span class="image fit"><img src="../../assets/images/canecaMagica/canecaMagica4.jpg"
+                                        alt="" /></span></div>
+                            <div class="col-4"><span class="image fit"><img src="../../assets/images/canecaMagica/canecaMagica2.png"
+                                        alt="" /></span></div>
+                            <div class="col-4"><span class="image fit"><img src="../../assets/images/canecaMagica/canecaMagica3.png"
+                                        alt="" /></span></div>
+                        </div>
+                    </div>
+                </section>
                 <p>Pronto para Presentear.</p>
                 <p>A Caneca Magica sempre impressiona pela surpresa que proporciona.<br>
                     Ela é totalmente preta, porém quando é despejado um líquido quente em seu interior ela revela a arte
@@ -68,11 +77,35 @@
                 <p>Pedimos que mande sua Foto ou Arte assim que realizar a compra.</p>
                 <p>Estamos inteiramente à disposição para qualquer dúvida!<br>
                     Desde já agradecemos a preferência e boas compras!</p>
-                <span><b>R$ 45,00 unidade</b></span>
+                <span><b>R$ 45,00</b></span>
+                <!-- comprar -->
                 <div class="inner">
-                    <script src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
-                        data-preference-id="30297308-ec30f9ab-d7cc-4688-be1f-b9c5aab2921d"
-                        data-source="button"></script>
+                    <br>
+                    <form method="post" action="#">
+                        <div class="col-6 col-12-small">
+                            <select>
+                                <option>Selecione a quantidade que desenha comprar</option>
+                                <option value="https://mpago.la/2MPnNaq">1 unidade </option>
+                                <option value="https://mpago.la/2B7MpJk">2 unidades </option>
+                                <option value="https://mpago.la/2oaHsCS">3 unidades </option>
+                                <option value="https://mpago.la/13UzJb6">4 unidades </option>
+                                <option value="https://mpago.la/1yWjniq">5 unidades </option>
+                                <option value="https://mpago.la/2AujGGQ">6 unidades </option>
+                                <option value="https://mpago.la/2tDcmma">7 unidades </option>
+                                <option value="https://mpago.la/1NbAmrN">8 unidades </option>
+                                <option value="https://mpago.la/2Ghv4S3">9 unidades </option>
+                                <option value="https://mpago.la/2vrDE5m">10 unidades </option>
+                                <option value="#">Quantidade personalizada </option>
+                            </select>
+                        </div>
+                    </form>
+                    <script>
+                        let selectEl = document.getElementsByTagName('select');
+
+                        selectEl[0].addEventListener('change', function () {
+                            location.href = this.value;
+                        });
+                    </script>
                 </div>
             </div>
         </div>
@@ -82,7 +115,7 @@
             <div class="inner">
                 <section>
                     <h2>Faça seu pedido</h2>
-					<form method="post" action="../../assets/php/envia.php" enctype="multipart/form-data">
+                    <form method="post" action="../../assets/php/envia.php" enctype="multipart/form-data">
                         <div class="fields">
                             <div class="field half">
                                 <input type="text" name="name" id="name" placeholder="Nome" required="required" />

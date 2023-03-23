@@ -52,86 +52,120 @@
                 <center>
                     <h1>Taça espumante personalizada</h1>
                 </center>
-                <span class="image main"><img src="../../assets/images/tacaEspumante.png" alt="" /></span>
+                <section>
+                    <div class="box alt">
+                        <div class="row gtr-uniform">
+                            <div class="col-4"><span class="image fit"><img src="../../assets/images/taçaAcrilico/tacaAcrilico1.jpg" alt="" /></span></div>
+                            <div class="col-4"><span class="image fit"><img src="../../assets/images/taçaAcrilico/tacaAcrilico2.jpg" alt="" /></span></div>
+                            <div class="col-4"><span class="image fit"><img src="../../assets/images/taçaAcrilico/tacaAcrilico3.jpg" alt="" /></span></div>
+                        </div>
+                    </div>
+                </section>
                 <p>Taça de acrilico para espumante, 8m excelente produto para diversas categorias de eventos: casamento,
                     baile de debutante, balada, etc. Personalização em transfer de alta qualidade.</p>
                 <p>As taça podem ser personalizada com nomes e frases diferentes umas das outras.</p>
                 <p>Pedimos que mande sua Foto ou Arte assim que realizar a compra.</p>
                 <p>Estamos inteiramente à disposição para qualquer dúvida!<br>
                     Desde já agradecemos a preferência e boas compras!</p>
-                <span><b>R$ 9,00</b></span>
+                <span><b>R$ 7,00</b></span>
+                <!-- comprar -->
                 <div class="inner">
-                    <script src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
-                        data-preference-id="30297308-471310bb-8bff-4a91-b86f-3c7e6a7a3e0f"
-                        data-source="button"></script>
+                    <br>
+                    <form method="post" action="#">
+                        <div class="col-6 col-12-small">
+                            <select>
+                                <option>Selecione a quantidade que desenha comprar</option>
+                                <option value="https://mpago.la/2S5dtCN">1 unidade </option>
+                                <option value="https://mpago.la/29VL5uc">2 unidades </option>
+                                <option value="https://mpago.la/1XCLp7v">3 unidades </option>
+                                <option value="https://mpago.la/1Tqc1tX">4 unidades </option>
+                                <option value="https://mpago.la/2GYxUXN">5 unidades </option>
+                                <option value="https://mpago.la/1VxY3fs">6 unidades </option>
+                                <option value="https://mpago.la/17s4rkF">7 unidades </option>
+                                <option value="https://mpago.la/2du6XRT">8 unidades </option>
+                                <option value="https://mpago.la/1HRSsin">9 unidades </option>
+                                <option value="https://mpago.la/2K9VUku">10 unidades </option>
+                                <option value="">Quantidade personalizada </option>
+                            </select>
+                        </div>
+                    </form>
+                    <script>
+                        let selectEl = document.getElementsByTagName('select');
+
+                        selectEl[0].addEventListener('change', function () {
+                            location.href = this.value;
+                        });
+                    </script>
                 </div>
             </div>
         </div>
 
-        <!-- Footer -->
-        <footer id="footer">
-            <div class="inner">
-                <section>
-                    <h2>Faça seu pedido</h2>
-					<form method="post" action="../../assets/php/envia.php" enctype="multipart/form-data">
-                        <div class="fields">
-                            <div class="field half">
-                                <input type="text" name="name" id="name" placeholder="Nome" required="required" />
+            <!-- Footer -->
+            <footer id="footer">
+                <div class="inner">
+                    <section>
+                        <h2>Faça seu pedido</h2>
+                        <form method="post" action="../../assets/php/envia.php" enctype="multipart/form-data">
+                            <div class="fields">
+                                <div class="field half">
+                                    <input type="text" name="name" id="name" placeholder="Nome" required="required" />
+                                </div>
+                                <div class="field half">
+                                    <input type="text" name="assunto" id="assunto" placeholder="Assunto" />
+                                </div>
+                                <div class="field">
+                                    <input type="email" name="email" id="email" placeholder="Email" />
+                                </div>
+                                <div class="field half">
+                                    <input type="tel" name="phone" id="phone" placeholder="Celular" />
+                                    <span>Não esqueça de colocar o DDD</span>
+                                </div>
+                                <div class="field">
+                                    <textarea name="message" id="message" placeholder="Mensagem..."></textarea>
+                                </div>
                             </div>
-                            <div class="field half">
-                                <input type="text" name="assunto" id="assunto" placeholder="Assunto" />
-                            </div>
-                            <div class="field">
-                                <input type="email" name="email" id="email" placeholder="Email" />
-                            </div>
-                            <div class="field half">
-                                <input type="tel" name="phone" id="phone" placeholder="Celular" />
-                                <span>Não esqueça de colocar o DDD</span>
-                            </div>
-                            <div class="field">
-                                <textarea name="message" id="message" placeholder="Mensagem..."></textarea>
-                            </div>
-                        </div>
 
-                        <label class="picture" for="picture__input" tabIndex="0">
-                            <span class="picture__image"></span>
-                        </label>
+                            <label class="picture" for="picture__input" tabIndex="0">
+                                <span class="picture__image"></span>
+                            </label>
 
-                        <input type="file" name="picture__input" id="picture__input">
-                        <ul class="actions">
-                            <li><input type="submit" value="Mandar" class="primary" /></li>
+                            <input type="file" name="picture__input" id="picture__input">
+                            <ul class="actions">
+                                <li><input type="submit" value="Mandar" class="primary" /></li>
+                            </ul>
+                        </form>
+                    </section>
+                    <section>
+                        <h2>Contato</h2>
+                        <ul class="icons">
+                            <li><a href="#" class="icon brands style2 fa-facebook-f"><span
+                                        class="label">Facebook</span></a>
+                            </li>
+                            <li><a href="https://www.instagram.com/feras_personlizados/"
+                                    class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a>
+                            </li>
+                            <li><a href="https://api.whatsapp.com/send?phone=5516992747372&text=Ol%C3%A1,%20vim%20atrav%C3%A9s%20do%20seu%20site"
+                                    class="icon brands style2 fa-whatsapp"><span class="label">Phone</span></a></li>
+                            <li><a href="tel:+5516992747372" class="icon solid style2 fa-phone"><span
+                                        class="label">Phone</span></a></li>
+                            <li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a>
+                            </li>
                         </ul>
-                    </form>
-                </section>
-                <section>
-                    <h2>Contato</h2>
-                    <ul class="icons">
-                        <li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a>
-                        </li>
-                        <li><a href="https://www.instagram.com/feras_personlizados/"
-                                class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a>
-                        </li>
-                        <li><a href="https://api.whatsapp.com/send?phone=5516992747372&text=Ol%C3%A1,%20vim%20atrav%C3%A9s%20do%20seu%20site"
-                                class="icon brands style2 fa-whatsapp"><span class="label">Phone</span></a></li>
-                        <li><a href="tel:+5516992747372" class="icon solid style2 fa-phone"><span
-                                    class="label">Phone</span></a></li>
-                        <li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+                    </section>
+                    <ul class="copyright">
+                        <li>&copy; Untitled. Todos direitos reservados</li>
                     </ul>
-                </section>
-                <ul class="copyright">
-                    <li>&copy; Untitled. Todos direitos reservados</li>
-                </ul>
-            </div>
-        </footer>
+                </div>
+            </footer>
 
-    </div>
+        </div>
 
-    <!-- Scripts -->
-    <script src="../../assets/js/jquery.min.js"></script>
-    <script src="../../assets/js/browser.min.js"></script>
-    <script src="../../assets/js/breakpoints.min.js"></script>
-    <script src="../../assets/js/util.js"></script>
-    <script src="../../assets/js/main.js"></script>
+        <!-- Scripts -->
+        <script src="../../assets/js/jquery.min.js"></script>
+        <script src="../../assets/js/browser.min.js"></script>
+        <script src="../../assets/js/breakpoints.min.js"></script>
+        <script src="../../assets/js/util.js"></script>
+        <script src="../../assets/js/main.js"></script>
 
 </body>
 

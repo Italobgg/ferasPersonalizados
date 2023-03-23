@@ -52,15 +52,49 @@
                 <center>
                     <h1>Chaveiro personalizado</h1>
                 </center>
-                <span class="image main"><img src="../../assets/images/chaveiro_1.png" alt="" /></span>
+                	<section>
+                        <div class="box alt">
+                            <div class="row gtr-uniform">
+                                <div class="col-4"><span class="image fit"><img src="../../assets/images/chaveiro/chaveiro1.jpg" alt="" /></span></div>
+                                <div class="col-4"><span class="image fit"><img src="../../assets/images/chaveiro/chaveiro2.jpg" alt="" /></span></div>
+                                <div class="col-4"><span class="image fit"><img src="../../assets/images/chaveiro/chaveiro3.jpg" alt="" /></span></div>
+                                <div class="col-4"><span class="image fit"><img src="../../assets/images/chaveiro/chaveiro4.jpg" alt="" /></span></div>
+                                <div class="col-4"><span class="image fit"><img src="../../assets/images/chaveiro/chaveiro5.jpg" alt="" /></span></div>
+                                <div class="col-4"><span class="image fit"><img src="../../assets/images/chaveiro/chaveiro6.jpg" alt="" /></span></div>
+                            </div>
+                        </div>
+                    </section>
                 <p>Ideal para você ou para presentear, Batizado, Padrinhos de Casamento Ou Decoração de Ambiente.</p>
                 <p>Nossos Produtos São Produzidos Vendidos e Entregues, com muito amor, e passa por um rigoroso controle
                     de qualidade de nossa equipe.</p>
-                <span><b>R$ 9,00</b></span>
+                <span><b>R$ 7,00</b></span>
+                <br>
+                <span><b>Pedido minimo de 20 unidades</b></span>
+                <!-- comprar -->
                 <div class="inner">
-                    <script src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
-                        data-preference-id="30297308-5565b9aa-ebf3-46a7-a21b-13676b1eb320"
-                        data-source="button"></script>
+                    <br>
+                    <form method="post" action="#">
+                        <div class="col-6 col-12-small">
+                            <select>
+                                <option>Selecione a quantidade que desenha comprar</option>
+                                <option value="https://mpago.la/1VG7iNb">20 unidade </option>
+                                <option value="https://mpago.la/2JDdA3H">40 unidades </option>
+                                <option value="https://mpago.la/2Beo1th">60 unidades </option>
+                                <option value="https://mpago.la/1gUivcx">80 unidades </option>
+                                <option value="https://mpago.la/18f7UpN">100 unidades </option>
+                                <option value="https://mpago.la/1XWQQrz">150 unidades </option>
+                                <option value="https://mpago.la/1YWbyvW">200 unidades </option>
+                                <option value="">Quantidade personalizada </option>
+                            </select>
+                        </div>
+                    </form>
+                    <script>
+                        let selectEl = document.getElementsByTagName('select');
+
+                        selectEl[0].addEventListener('change', function () {
+                            location.href = this.value;
+                        });
+                    </script>
                 </div>
             </div>
         </div>
@@ -70,7 +104,7 @@
             <div class="inner">
                 <section>
                     <h2>Faça seu pedido</h2>
-					<form method="post" action="../../assets/php/envia.php" enctype="multipart/form-data">
+                    <form method="post" action="../../assets/php/envia.php" enctype="multipart/form-data">
                         <div class="fields">
                             <div class="field half">
                                 <input type="text" name="name" id="name" placeholder="Nome" required="required" />

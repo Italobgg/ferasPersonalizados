@@ -52,18 +52,50 @@
 				<center>
 					<h1>Long Drink personalizado</h1>
 				</center>
-				<span class="image main"><img src="../../assets/images/longDrink.png" alt="" /></span>
+				<section>
+                    <div class="box alt">
+                        <div class="row gtr-uniform">
+                            <div class="col-4"><span class="image fit"><img src="../../assets/images/longDrink/longDrink1.jpg" alt="" /></span></div>
+                            <div class="col-4"><span class="image fit"><img src="../../assets/images/longDrink/longDrink2.jpg" alt="" /></span></div>
+                            <div class="col-4"><span class="image fit"><img src="../../assets/images/longDrink/longDrink3.jpg" alt="" /></span></div>
+                        </div>
+                    </div>
+                </section>
 				<p>Para alegrar e dar um charme em seu evento.</p>
 				<p>Temas: Infantis, batizado, 15 anos, chá de panela, casamento, chá de bebê, boteco festas de adultos e
 					muito mais.</p>
 				<p>Pedimos que mande sua Foto ou Arte assim que realizar a compra.</p>
 				<p>Estamos inteiramente à disposição para qualquer dúvida!<br>
 					Desde já agradecemos a preferência e boas compras!</p>
-				<span><b>R$ 9,00</b></span>
+				<span><b>R$ 06,00</b></span>
+				<!-- comprar -->
 				<div class="inner">
-					<script src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
-						data-preference-id="30297308-9be05641-463e-4142-a196-2a3ab0425128"
-						data-source="button"></script>
+					<br>
+					<form method="post" action="#">
+						<div class="col-6 col-12-small">
+							<select>
+								<option>Selecione a quantidade que desenha comprar</option>
+								<option value="https://mpago.la/1R2DBF7">1 unidade </option>
+								<option value="https://mpago.la/179wQcJ">2 unidades </option>
+								<option value="https://mpago.la/13vPkMP">3 unidades </option>
+								<option value="https://mpago.la/2RNWbyk">4 unidades </option>
+								<option value="https://mpago.la/2WEPfaB">5 unidades </option>
+								<option value="https://mpago.la/1a9vMEe">6 unidades </option>
+								<option value="https://mpago.la/1NyL3bA">7 unidades </option>
+								<option value="https://mpago.la/2uKPQsQ">8 unidades </option>
+								<option value="https://mpago.la/1zXj1iq">9 unidades </option>
+								<option value="https://mpago.la/1V2eXBT">10 unidades </option>
+								<option value="">Quantidade personalizada </option>
+							</select>
+						</div>
+					</form>
+					<script>
+						let selectEl = document.getElementsByTagName('select');
+
+						selectEl[0].addEventListener('change', function () {
+							location.href = this.value;
+						});
+					</script>
 				</div>
 			</div>
 		</div>

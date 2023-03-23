@@ -72,10 +72,34 @@
 				<span>Medida: 10x30 cm</span><br>
 				<span>Composição: Cerâmica</span><br>
 				<span><b>R$ 39,99</b></span>
+				<!-- comprar -->
 				<div class="inner">
-					<script src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
-						data-preference-id="30297308-47b3846c-ec93-4914-bf29-cc77467c667a"
-						data-source="button"></script>
+					<br>
+					<form method="post" action="#">
+						<div class="col-6 col-12-small">
+							<select>
+								<option>Selecione a quantidade que desenha comprar</option>
+								<option value="https://www.google.com">1 unidade </option>
+								<option value="https://www.google.com">2 unidades </option>
+								<option value="https://www.google.com">3 unidades </option>
+								<option value="https://www.google.com">4 unidades </option>
+								<option value="https://www.google.com">5 unidades </option>
+								<option value="https://www.google.com">6 unidades </option>
+								<option value="https://www.google.com">7 unidades </option>
+								<option value="https://www.google.com">8 unidades </option>
+								<option value="https://www.google.com">9 unidades </option>
+								<option value="https://www.google.com">10 unidades </option>
+								<option value="https://www.google.com">Quantidade personalizada </option>
+							</select>
+						</div>
+					</form>
+					<script>
+						let selectEl = document.getElementsByTagName('select');
+
+						selectEl[0].addEventListener('change', function () {
+							location.href = this.value;
+						});
+					</script>
 				</div>
 			</div>
 		</div>

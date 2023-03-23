@@ -10,7 +10,7 @@ $usermessage = $_POST['message'];
 $message = "Nome = " . $name . "\r\n Celular =" . $phone . "\r\n Email = " . $email . "\r\n Assunto = " . $assunto . "\r\n Celular =" . $phone . "\r\n Mensagem =" . $usermessage;
 
 $subject = "Contato via site";
-$fromname = "Contato do site";
+$fromname = "Contato Feras";
 $fromemail = 'contato@feraspersonalizados.com.br';
 $mailto = 'feraspersonalizados@gmail.com';
 $mailto = 'italobgg00@gmail.com';
@@ -40,7 +40,7 @@ $body .= $content . $eol;
 $body .= "--" . $separator . "--";
 //SEND Mail
 if (mail($mailto, $subject, $body, $headers)) {
-    header('Location: pages/enviaEmail/recebido.html'); // Escolha para onde mandar depois de enviar o e-mail
+    header('Location: ../../pages/enviaEmail/recebido.html'); // Escolha para onde mandar depois de enviar o e-mail
 
 
 } else {
