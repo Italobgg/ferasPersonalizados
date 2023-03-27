@@ -52,26 +52,81 @@
 				<h1> Pagamento realizado com sucesso !</h1>
 			</div>
 			<div class="inner">
-				<h2>Por favor mandar imagem e contato para podermos enviar seu produto.</h2>
+				<h2>Por favor preencha com seus dados para realizarmos o envio do seu produto.</h2>
 
 				<p>Gostaríamos de agradecer sinceramente pela sua recente compra conosco. Nós valorizamos muito sua
-					escolha e estamos honrados por ter sido sua primeira opção.</p>
+					escolha.<br>
 
-				<p>Nós nos esforçamos para oferecer produtos de alta qualidade e um atendimento ao cliente excepcional.
+					Nós nos esforçamos para oferecer produtos de alta qualidade e um atendimento ao cliente excepcional.
 					Esperamos que sua experiência de compra tenha sido satisfatória e que você esteja completamente
-					satisfeito com seu produto.</p>
+					satisfeito com seu produto.<br>
 
-				<p>Se houver alguma necessidade ou questão em relação a sua compra, por favor, não hesite em entrar em
-					contato conosco. Nós estaremos felizes em ajudá-lo.</p>
+					Se houver alguma necessidade ou questão em relação a sua compra, por favor, não hesite em entrar em
+					contato conosco. Nós estaremos felizes em ajudá-lo.<br>
 
-				<p>Mais uma vez, muito obrigado pela sua confiança e preferencia. Esperamos ter a oportunidade de
-					servi-lo novamente em breve.</p>
+					Mais uma vez, muito obrigado pela sua confiança e preferencia. Esperamos ter a oportunidade de
+					servi-lo novamente em breve.<br>
 
-				<p>Com os melhores cumprimentos,<br>Feras Personalizados.</p>
+					Com os melhores cumprimentos,<br>Feras Personalizados.</p>
 
+				<h1>
+					<center>Endereço de envio</center>
+				</h1>
+
+				<form method="post" action="../../assets/php/pagamentoConcluido.php" enctype="multipart/form-data">
+					<div class="row gtr-uniform">
+						<div class="col-6 col-12-xsmall">
+							<input type="text" name="name" id="name" placeholder="Nome completo" required="required" />
+						</div>
+
+						<div class="col-6 col-12-xsmall">
+							<input type="email" name="email" id="email" placeholder="Email" required="required" />
+						</div>
+
+						<div class="col-12 col-12-xsmall">
+							<input type="tel" name="phone" id="phone" placeholder="Celular" />
+						</div>
+
+						<div class="col-6 col-12-xsmall">
+							<input type="text" name="CEP" id="CEP" placeholder="CEP"
+								required="required">
+						</div>
+
+						<div class="col-6 col-12-xsmall">
+							<input type="text" name="cityAndState" id="cityAndState" placeholder="Cidade & Estado"
+								required="required">
+						</div>
+
+						<div class="col-6 col-12-xsmall">
+							<input type="text" name="streetOrAvenue" id="streetOrAvenue" placeholder="Rua / Avenida"
+								required="required">
+						</div>
+
+						<div class="col-6 col-12-xsmall">
+							<input type="text" name="numberHouse" id="numberHouse" placeholder="Numero"
+								required="required">
+						</div>
+
+						<div class="col-12 col-12-xsmall">
+							<input type="text" name="complement" id="complement" placeholder="Complemento">
+						</div>
+
+						<div class="inner">
+
+							<h2>Mande sua arte aqui</h2>
+
+							<label class="picture" for="picture__input" tabIndex="0">
+								<span class="picture__image"></span>
+							</label>
+
+							<input type="file" name="picture__input" id="picture__input">
+							<ul class="actions">
+								<li><input type="submit" value="Mandar" class="primary" /></li>
+							</ul>
+						</div>
+				</form>
 			</div>
 		</div>
-
 	</div>
 
 	<!-- Scripts -->

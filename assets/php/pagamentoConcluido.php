@@ -2,23 +2,28 @@
 $filenameee = $_FILES['picture__input']['name'];
 $fileName = $_FILES['picture__input']['tmp_name'];
 $name = $_POST['name'];
-$assunto = $_POST['assunto'];
 $email = $_POST['email'];
-$phone = $_POST['phone'];
-$usermessage = $_POST['message'];
+$cityAndState = $_POST['cityAndState'];
+$streetOrAvenue = $_POST['streetOrAvenue'];
+$CEP = $_POST['CEP'];
 
-$message = 
-    "Nome = " .$name . "\r\n 
-    Celular =" .$phone . "\r\n 
-    Email = " .$email . "\r\n 
-    Assunto = " .$assunto . "\r\n 
-    Mensagem =" .$usermessage;
 
-$subject = "Contato via site";
+
+$message =
+    "Nome = " . $name . "\r\n 
+    Email = " . $email . "\r\n 
+    CEP = " . $CEP . "\r\n 
+    Cidade e estado = " . $cityAndState . "\r\n 
+    Rua ou avenida =" . $streetOrAvenue . "\r\n 
+    Numero =" . $numberHouse . "\r\n 
+    Complemento =" . $complement;
+
+
+$subject = "Compra realizada";
 $fromname = "Contato Feras";
 $fromemail = 'contato@feraspersonalizados.com.br';
-/* $mailto = 'feraspersonalizados@gmail.com';
- */$mailto = 'italobgg00@gmail.com';
+/* $mailto = 'feraspersonalizados@gmail.com'; */
+$mailto = 'italobgg00@gmail.com';
 $content = file_get_contents($fileName);
 $content = chunk_split(base64_encode($content));
 
