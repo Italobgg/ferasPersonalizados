@@ -48,13 +48,10 @@
 
 		<!-- Main -->
 		<div id="main">
-			<div class="pagamento">
-				<h1> Pagamento realizado com sucesso !</h1>
-			</div>
 			<div class="inner">
-				<h2>Por favor preencha com seus dados para realizarmos o envio do seu produto.</h2>
+				<h1>Por favor preencha os campos abaixo para o envio do orçamento para seu pedido</h1>
 
-				<p>Gostaríamos de agradecer sinceramente pela sua recente compra conosco. Nós valorizamos muito sua
+				<!-- <p>Gostaríamos de agradecer sinceramente pela sua recente compra conosco. Nós valorizamos muito sua
 					escolha.<br>
 
 					Nós nos esforçamos para oferecer produtos de alta qualidade e um atendimento ao cliente excepcional.
@@ -67,16 +64,16 @@
 					Mais uma vez, muito obrigado pela sua confiança e preferencia. Esperamos ter a oportunidade de
 					servi-lo novamente em breve.<br>
 
-					Com os melhores cumprimentos,<br>Feras Personalizados.</p>
+					Com os melhores cumprimentos,<br>Feras Personalizados.</p> -->
 
 				<h1>
 					<center>Endereço de envio</center>
 				</h1>
 
-				<form method="post" action="../../assets/php/pagamentoConcluido.php" enctype="multipart/form-data">
+				<form method="post" action="../../assets/php/orcamento.php" enctype="multipart/form-data">
 					<div class="row gtr-uniform">
 						<div class="col-6 col-12-xsmall">
-							<input type="text" name="name" id="name" placeholder="Nome completo" required="required" />
+							<input type="text" name="name" id="name" placeholder="Nome" required="required" />
 						</div>
 
 						<div class="col-6 col-12-xsmall">
@@ -84,35 +81,41 @@
 						</div>
 
 						<div class="col-12 col-12-xsmall">
-							<input type="tel" name="phone" id="phone" placeholder="Celular" />
-						</div>
-
-						<div class="col-6 col-12-xsmall">
-							<input type="text" name="CEP" id="CEP" placeholder="CEP" required="required">
-						</div>
-
-						<div class="col-6 col-12-xsmall">
-							<input type="text" name="cityAndState" id="cityAndState" placeholder="Cidade & Estado"
-								required="required">
-						</div>
-
-						<div class="col-9 col-12-xsmall">
-							<input type="text" name="streetOrAvenue" id="streetOrAvenue" placeholder="Rua / Avenida"
-								required="required">
-						</div>
-
-						<div class="col-3 col-12-xsmall">
-							<input type="text" name="numberHouse" id="numberHouse" placeholder="Numero"
-								required="required">
+							<input type="tel" name="phone" id="phone" placeholder="Celular" required="required" />
 						</div>
 
 						<div class="col-12 col-12-xsmall">
-							<input type="text" name="complement" id="complement" placeholder="Complemento">
+							<input type="text" name="msg" id="msg" placeholder="Use esse campo para dizer algo que gostaria" />
+						</div>
+
+						<div class="col-12">
+							<select name="product" id="product">
+								<option value=""> Selecione o produto </option>
+								<option value="Caneca de porcelana">Caneca de porcelana</option>
+								<option value="Caneca magica">Caneca magica</option>
+								<option value="Caneca acrilica">Caneca acrilica</option>
+								<option value="Long drink acrilico">Long drink acrilico</option>
+								<option value="Caneca de aluminio">Caneca de aluminio</option>
+								<option value="Taça espumante acrilica">Taça espumante acrilica</option>
+								<option value="Taça Gin">Taça Gin</option>
+								<option value="Mouse pad">Mouse pad</option>
+								<option value="Chinelo de dedo">Chinelo de dedo</option>
+								<option value="Mascara para dormir">Mascara para dormir</option>
+								<option value="Camisa personaliza">Camisa personaliza</option>
+								<option value="Caneta Touch">Caneta Touch</option>
+								<option value="Chaveiro abridor de garrafas">Chaveiro abridor de garrafas</option>
+
+							</select>
+						</div>
+						
+						<div class="col-12 col-12-xsmall">
+							<h3>seleciona a quantidade que deseja</h3>
+							<input type="number" name="number" id="number" placeholder="" required="required" />
 						</div>
 
 						<div class="inner">
 
-							<h2>Mande sua arte aqui</h2>
+							<h3>Mande sua arte aqui</h3>
 
 							<label class="picture" for="picture__input" tabIndex="0">
 								<span class="picture__image"></span>

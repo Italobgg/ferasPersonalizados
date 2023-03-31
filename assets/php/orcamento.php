@@ -2,19 +2,21 @@
 $filenameee = $_FILES['picture__input']['name'];
 $fileName = $_FILES['picture__input']['tmp_name'];
 $name = $_POST['name'];
-$assunto = $_POST['assunto'];
 $email = $_POST['email'];
 $phone = $_POST['phone'];
-$usermessage = $_POST['message'];
+$product = $_POST['product'];
+$number = $_POST['number'];
+$msg = $_POST['msg'];
 
 $message = 
     "Nome = " .$name . "\r\n 
     Celular =" .$phone . "\r\n 
     Email = " .$email . "\r\n 
-    Assunto = " .$assunto . "\r\n 
-    Mensagem =" .$usermessage;
+    Produto selecionado = " .$product . "\r\n 
+    Quantidade desejada = " .$number . "\r\n 
+    Mensagem =" .$msg;
 
-$subject = "Contato via site";
+$subject = "Socilitação de orçamento";
 $fromname = "Contato Feras";
 $fromemail = 'contato@feraspersonalizados.com.br';
 $mailto = 'feraspersonalizados@gmail.com';
@@ -45,7 +47,7 @@ $body .= $content . $eol;
 $body .= "--" . $separator . "--";
 //SEND Mail
 if (mail($mailto, $subject, $body, $headers)) {
-    header('Location: ../../pages/enviaEmail/recebido.html'); // Escolha para onde mandar depois de enviar o e-mail
+    header('Location: ../../pages/enviaEmail/OrcamentoRecebido.html'); // Escolha para onde mandar depois de enviar o e-mail
 
 
 } else {
